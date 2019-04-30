@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ | KUJIRA Cafe</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+<!-- ヘッダー -->
+	<header class="header">
+		<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="KUJIRA Cafe"></a></h1>
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li><a href="about.html">店舗案内</a></li>
+				<li><a href="access.html">アクセス</a></li>
+				<li><a href="menu.html">メニュー</a></li>
+				<li><a href="contact.html">お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</header>
+<!-- ヘッダーここまで -->
+<!-- メイン -->
+	<main>
+		<h2>お問い合わせ</h2>
+		<form method="GET" action="result.html">
+		<div>
+			<label for="kind">
+				お問い合わせの種類
+			</label><br>
+			<select id="kind" name="kind">
+				<option value="reservation">ご予約</option>
+				<option value="event">イベントについて</option>
+				<option value="contact">その他のお問い合わせ</option>
+			</select>
+			</div>
+			<div>
+				KUJIRA Cafeにご来店いただいたことはありますか。<br>
+					<label><input type="radio" name="first" value="yes" checked>
+はい</label>
+					<label><input type="radio" name="first" value="no">
+いいえ</label>
+			</div>
+			<div>
+				当カフェをお知りになったきっかけは？(複数選択可)<br>
+					<label><input type="checkbox" name="how" value="friends">
+知り合いの紹介で</label>
+					<label><input type="checkbox" name="how" value="magazine">
+雑誌・Webサイトを見て</label>
+			</div>
+			<div>
+				<label>お問い合わせの件名<br>
+				<input type="text" name="subject" placeholder="お問い合わせ"></label>
+			</div>
+			<div>
+				<label>お問い合わせの具体的な内容<br>
+				<textarea name="message"></textarea></label>
+			</div>
+			<div>
+				<input type="submit" name="submit" value="送信">
+			</div>
+		</form>
+	</main>
+<!-- メインここまで -->
+<!-- フッター -->
+	<footer class="footer">
+		<p>&copy;Copyright KUJIRA Cafe. All rights reserved.</p>
+	</footer>
+<!-- フッターここまで -->
+</div>
+</body>
+</html>

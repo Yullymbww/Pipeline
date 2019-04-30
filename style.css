@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* 全てのWebページに適用されます */
+html{
+		font-family:sans-serif;
+}
+html *{
+		box-sizing: border-box;
+}
+body{
+		margin: 0 0 0 0;
+		background-color: #eeeae9;
+}
+
+.wrapper {
+		margin: 0 auto 0 auto;
+		max-width: 960px;
+		
+}
+
+h2{
+		color: #3f1170;
+		font-size: 22px;
+		border-bottom: 3px dotted #3f5170;
+		margin-top: 20px;
+		margin-right: 0px;
+		margin-bottom: 20px;
+		margin-left: 0px;
+		padding-top: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		padding-left: 5px;
+}
+
+p{
+		line-height: 1.6;
+}
+
+a:link{
+		color: #d25833;
+}
+a:visited{
+		color: #d25833;
+}
+a:hover{
+		color: #e3937a;
+}
+a:active{
+		color: #ff6a3b;
+}
+
+img {
+		max-width: 100%;
+		height: auto;
+}
+
+/* 全てのページに適用 ヘッダー */
+.logo{
+		margin: 50px 0 40px 0;
+		line-height: 0;
+		text-align: center;
+}
+
+.nav li{
+		display: inline;
+		list-style-type: none;
+		padding-right: 30px;
+}
+
+.nav ul{
+		margin: 0 0 0 0;
+		padding: 20px 10px 15px 20px;
+		background-image: url(../images/menu-bg.png);
+		background-repeat: repeat-x;
+}
+
+.nav a:link{
+color: #3c454d;
+text-decoration: none;
+}
+.nav a:visited{
+color: #3c454d;
+text-decoration: none;
+}
+.nav a:hover{
+color: #7b8dac;
+text-decoration: none;
+}
+.nav a:active{
+color: #5a9bc0;
+text-decoration: none;
+}
+
+.footer {
+		background-image: url(../images/footer-bg.png);
+		background-repeat: no-repeat;
+		margin-top: 30px;
+		padding: 80px 15px 20px 15px;
+		font-size: 12px;
+		color: #3f5170;
+}
+
+/* 個別のスタイル */
+/* index.html */
+.keyvisual{
+		margin: 15px 0 0 0;
+}
+
+.news-item {
+		margin: 0;
+}
+
+/* 個別のスタイル */
+/* about.html */
+.shop-photo{
+		float: left;
+		padding: 0 1em 1em 0;
+}
+.clear {
+		clear: both;
+}
+.info {
+		border-collapse: collapse;
+}
+.info th,.info td{
+		padding: 8px;
+		border: 1px solid #bec2c7;
+		text-align: left;
+}
+.info th{
+		background-color: #dde2ea;
+		width: 90px;
+		color: #3f5170;
+		vertical-align:top;
+}
+
+/* 個別のスタイル */
+/* menu.html */
+
+.menu-item {
+		display: flex;
+		border-bottom: 1px dashed #bec2c7;
+		padding: 20px 8px;
+}
+.menu-photo {
+		margin-right: 16px;
+		flex: 1 1 auto;
+}
+.menu-text {
+		flex: 0 0 336px;
+}
+
+/* 個別のスタイル */
+/* access.html */
+.map {
+		text-align: center;
+}
+
+/* 個別のスタイル */
+/* contact.html */
+form div{
+		padding: 12px;
+		border-bottom: 1px dashed #bec2c7;
+}
+select{
+		width: 50em;
+}
+input[name="subject"] {
+		width: 50em;
+}
+textarea {
+		width: 50em;
+		height: 6em;
+}
+input[type="submit"] {
+		margin: 20px 0;
+		width: 50em;
+}
+
+/* スマートフォン向けCSS */
+@media (max-width: 767px) {
+	/* 全体 ナビゲーション*/
+	.wrapper {
+		margin: 0 8px;
+}
+	.logo {
+		margin: 30px 0;
+}
+	.logo img {
+		width: 200px;
+}
+	.nav {
+		background-color: #dfddda;
+}
+	.nav li {
+		display: block;
+}
+/* menuの横並び解除 */
+.menu-item {
+		display: block;
+}
+.menu-photo {
+		margin-right: 0;
+		width: 100%;
+}
+.menu-text {
+		width: 100%;
+}
+/* aboutのpadding指定 */
+.shop-photo{
+		padding-right: 0;
+}
+/* formのpadding指定 */
+select {
+width: 100%;
+}
+input[name="subject"] {
+		width: 100%;
+}
+textarea {
+		width: 100%;
+}
+input[type="submit"] {
+		margin: 20px 0;
+		width: 100%;
+}
